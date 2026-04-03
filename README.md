@@ -11,8 +11,8 @@ A web-based DCF valuation engine for NSE-listed Indian equities. Enter a stock t
 - Searches NSE-listed companies by name or ticker
 - Fetches live financials from Yahoo Finance (revenue, operating income, PAT, capex, depreciation, working capital, debt, cash)
 - Automatically detects financial vs non-financial companies and selects the appropriate model:
-  - **FCFF** — for non-financial companies (manufacturing, IT, FMCG, pharma, etc.)
-  - **FCFE** — for banks, NBFCs, insurance, and financial services
+  - **FCFF** for non-financial companies (manufacturing, IT, FMCG, pharma, etc.)
+  - **FCFE** for banks, NBFCs, insurance, and financial services
   - **Book Value fallback** — when cash flow inputs fail sanity thresholds (e.g. FCFE > 50% upside for a bank)
 - Computes **WACC** from actual balance sheet capital structure (not a hardcoded assumption)
 - Uses **4-year median** for capex%, depreciation%, and NWC% ratios to smooth out one-off years
@@ -104,7 +104,7 @@ Open `http://localhost:10000` in your browser.
 
 ## Why I built this
 
-I wanted a tool that could run a proper DCF on Indian stocks without manually pulling numbers into a spreadsheet every time. Most free screeners give you ratios but not a bottom-up intrinsic value. This does the full calculation automatically — including selecting the right model based on the company type — so I can spend time on the thesis rather than the arithmetic.
+I wanted a tool that could run a proper DCF on Indian stocks without manually pulling numbers into a spreadsheet every time. Most free screeners give you ratios but not a bottom-up intrinsic value. This does the full calculation automatically including selecting the right model based on the company type so I can spend time on the thesis rather than the arithmetic.
 
 ---
 
