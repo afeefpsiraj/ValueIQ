@@ -95,7 +95,7 @@ Open `http://localhost:10000` in your browser.
 
 ## Limitations
 
-- Data sourced from yFinance — accuracy depends on Yahoo Finance's data quality for Indian stocks
+- Data is fetched from yFinance hence accuracy depends on Yahoo Finance's data quality for Indian stocks
 - Works best for companies with 3+ years of clean financials
 - Not suitable for early-stage, loss-making, or recently-listed companies
 - Terminal growth rate fixed at 4%; WACC cost assumptions are static defaults
