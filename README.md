@@ -13,7 +13,7 @@ A web-based DCF valuation engine for NSE-listed Indian equities. Enter a stock t
 - Automatically detects financial vs non-financial companies and selects the appropriate model:
   - **FCFF** for non-financial companies (manufacturing, IT, FMCG, pharma, etc.)
   - **FCFE** for banks, NBFCs, insurance, and financial services
-  - **Book Value fallback** — when cash flow inputs fail sanity thresholds (e.g. FCFE > 50% upside for a bank)
+  - **Book Value fallback** when cash flow inputs fail sanity thresholds (e.g. FCFE > 50% upside for a bank)
 - Computes **WACC** from actual balance sheet capital structure (not a hardcoded assumption)
 - Uses **4-year median** for capex%, depreciation%, and NWC% ratios to smooth out one-off years
 - Clamps growth rate to 2–15% and margins to realistic ranges to prevent model blow-up
